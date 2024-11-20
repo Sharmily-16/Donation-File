@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Donation File</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-regular">
+    
+    <head>
+        <div class="header flex justify-between items-center md:mx-auto md:px-[137px] pt-[35px] px-[5px]">
+            <div class=""><a class="text-[#000000] sm:text-[20px] text-[16px] py-[12px] sm:px-[32px] px-[15px] bg-[#B4F461] rounded-[8px] font-bold " href="#">Blog</a></div>
+            <div class="sm:flex"><img class="m-auto" src="image/Group.png" alt=""><h4 class="sm:text-[20px] text-[16px] pl-[10px] mt-[10px] font-bold">Donate Bangladesh</h4></div>
+            <div class="flex"><img src="image/dollar 1.png" alt=""> <span id="totalDonation" class="font-semibold">0</span></div>
+        </div>
+    </head>
+    <main class="md:mx-auto md:px-[137px] px-[20px] pt-[120px] pb-[146px]">
+        <div class=" font-sans">
+            <div x-data="{ openTab: 1 }" class="py-[32px]">
+                <div class="">
+                    <div class="mb-4 flex space-x-4  bg-white rounded-lg shadow-md max-w-md mx-auto">
+                        <button x-on:click="openTab = 1" :class="{ 'bg-[#B4F461] text-black': openTab === 1 }" class="flex-1 py-[16px] px-[32px]  rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-bold md:text-[20px] text-[16px]">Donation</button>
+                        <button x-on:click="openTab = 2" :class="{ 'bg-[#B4F461] text-black': openTab === 2 }" class="flex-1 py-[16px] px-[32px] rounded-md focus:outline-none focus:shadow-outline-blue transition-all duration-300 font-bold md:text-[20px] text-[16px]">History</button>
+                    </div>
+        
+                    <div x-show="openTab === 1" class="transition-all duration-300 bg-white  rounded-lg shadow-md ">
+                        <div class="mt-[35px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]">
+                            <div class="lg:columns-2 py-[32px] px-[32px] ">
+                                <img src="image/Rectangle 1.png" alt="">
+                                <div class="ml-[32px] overflow-hidden 	">
+                                    <button class=" bg-[#f1f1f1] py-[10px] px-[16px] rounded-[8px]">
+                                        <div class="flex mt-[15px]">
+                                            <img src="image/dollar 1.png" alt="">
+                                            <span class="ml-[10px] ">0 BDT</span>
+                                        </div>
+                                    </button>
+                                    <div>
+                                        <h4 class="md:text-[20px] text-[16px] font-semibold">Donate for Flood at Noakhali, Bangladesh</h4>
+                                        <p class="md:text-[16px] text-[14px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+                                        <div class="w-full w-[450px] pt-[26px] ">
+                                            <input id="donation1" placeholder="Enter amount" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-[16px] border border-slate-200 rounded-[8px] px-[18px] py-[18px] transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Write Donation Amount">
+                                        </div>
+                                        <div class="  pt-[16px] ">
+                                            <button id="submitBtn1" class="font-semibold bg-[#B4F461] w-full w-[450px] py-[16px] rounded-[8px] md:text-[20px] text-[16px] ">Donate Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mt-[35px] mb-[35px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]">
+                            <div class="lg:columns-2 py-[32px] px-[32px] ">
+                                <img src="image/Rectangle 2.png" alt="">
+                                <div class="ml-[32px] overflow-hidden 	">
+                                    <button class=" bg-[#f1f1f1] py-[10px] px-[16px] rounded-[8px]">
+                                        <div class="flex mt-[15px]">
+                                            <img src="image/dollar 1.png" alt="">
+                                            <span class="ml-[10px]">600 BDT</span>
+                                        </div>
+                                    </button>
+                                    <div>
+                                        <h4 class="md:text-[20px] text-[16px] font-semibold">Donate for Flood Relief in Feni,Bangladesh</h4>
+                                        <p class="md:text-[16px] text-[14px]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+                                        <div class="w-full w-[450px] pt-[26px] ">
+                                            <input  id="donation2" placeholder="Enter amount" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-[16px] border border-slate-200 rounded-[8px] px-[18px] py-[18px] transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Write Donation Amount">
+                                        </div>
+                                        <div class="pt-[16px] ">
+                                            <button id="submitBtn2" class="font-semibold bg-[#B4F461] w-full w-[450px] py-[16px] rounded-[8px] md:text-[20px] text-[16px] ">Donate Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="mt-[35px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]">
+                            <div class="lg:columns-2 py-[32px] px-[32px] ">
+                                <img src="image/Rectangle 3.png" alt="">
+                                <div class="ml-[32px] overflow-hidden	">
+                                    <button class=" bg-[#f1f1f1] py-[10px] px-[16px] rounded-[8px]">
+                                        <div class="flex mt-[15px]">
+                                            <img src="image/dollar 1.png" alt="">
+                                            <span class="ml-[10px]">2400 BDT</span>
+                                        </div>
+                                    </button>
+                                    <div>
+                                        <h4 class="md:text-[20px] text-[16px] font-semibold">Aid for Injured in the Quota Movement</h4>
+                                        <p class="md:text-[16px] text-[14px]"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+                                        <div class="w-full w-[450px] pt-[26px] ">
+                                            <input  id="donation3" placeholder="Enter amount" class="w-full bg-transparent placeholder:text-slate-400 text-slate-700 text-[16px] border border-slate-200 rounded-[8px] px-[18px] py-[18px] transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-300 shadow-sm focus:shadow" placeholder="Write Donation Amount">
+                                        </div>
+                                        <div class="pt-[16px] ">
+                                            <button id="submitBtn3" class="font-semibold bg-[#B4F461] w-full w-[450px] py-[16px] rounded-[8px] md:text-[20px] text-[16px] ">Donate Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div x-show="openTab === 2" class="transition-all duration-300 bg-white  rounded-lg py-[20px]">
+                        <div class=" space-y-4">
+                            <div
+                              class="group flex flex-col gap-2 rounded-lg bg-white  p-6 text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]"
+                              tabindex="1"
+                            >
+                              <div class="flex cursor-pointer items-center justify-between md:text-[20px] text-[16px] font-semibold">
+                                <span> 96500 Taka is Donated for famine-2024 at Fani, Bangladesh.  </span>
+                                
+                              </div>
+                              <div
+                                class="invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 text-[#666666]"
+                              >
+                                Date: Tue sep 17 2024 08:39:11 GMT +0600(Bangladesh Standard Time)
+                              </div>
+                            </div>
+                          
+                            <div
+                              class="group flex flex-col gap-2 rounded-lg bg-white p-6 text-black x] text-black shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]"
+                              tabindex="2"
+                            >
+                              <div class="flex cursor-pointer items-center justify-between text-[20px] font-semibold ">
+                                <span> 6500 Taka is Donated for flood Relief in Fani, Bangladesh. </span>
+                        
+                              </div>
+                              <div
+                                class=" invisible h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000  text-[#666666]"
+                              >
+                              Date: Tue sep 17 2024 08:39:11 GMT +0600(Bangladesh Standard Time)
+
+                              </div>
+                            </div>
+                          
+                            <div
+                              class="group flex flex-col gap-2 rounded-lg bg-black p-6 bg-white text-black  shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-[15px]"
+                              tabindex="3"
+                            >
+                              <div class="flex cursor-pointer items-center justify-between text-[20px] font-semibold ">
+                                <span> 15500 Taka is Donated for Aid for Injuried in the Quota Movement, Bangladesh. </span>
+                              </div>
+                              <div
+                                class="text-[#666666] h-auto max-h-0 items-center opacity-0 transition-all group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000"
+                              >
+                              Date: Tue sep 17 2024 08:39:11 GMT +0600(Bangladesh Standard Time)
+
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+
+    
+      
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</body>
+</html>
